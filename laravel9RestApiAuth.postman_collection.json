@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "17c3a2cb-8c4e-40cf-8012-d673955446d4",
+		"name": "laravel9RestApiAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17810242"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "laravel9restapiauth.test/api/register?name=Mehmet KIYAK&email=mkiyak511@gmail.com&password=12345678",
+					"host": [
+						"laravel9restapiauth",
+						"test"
+					],
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mehmet KIYAK"
+						},
+						{
+							"key": "email",
+							"value": "mkiyak511@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjcxMjY0OTk0LCJleHAiOjE2NzEyNjg1OTQsIm5iZiI6MTY3MTI2NDk5NCwianRpIjoiY3BNNzJTbXBLSW1lc28xcCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.mTJqhQX_jiyhswsrQh7wikcBSY2dzbW4P4XlQmmGroM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "laravel9restapiauth.test/api/login?email=mkiyak511@gmail.com&password=12345678",
+					"host": [
+						"laravel9restapiauth",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mkiyak511@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGFyYXZlbDlyZXN0YXBpYXV0aC50ZXN0L2FwaS9sb2dpbiIsImlhdCI6MTY3MTI3MTM0MywiZXhwIjoxNjcxMjc0OTQzLCJuYmYiOjE2NzEyNzEzNDMsImp0aSI6IlMxR3g1eGJzSFlaSUlvMXIiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mx3cS8KIV6HqTbSQZoRugHPsBjivkWGzy_3ruYAlajs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "laravel9restapiauth.test/api/logout",
+					"host": [
+						"laravel9restapiauth",
+						"test"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGFyYXZlbDlyZXN0YXBpYXV0aC50ZXN0L2FwaS9sb2dpbiIsImlhdCI6MTY3MTI2ODk2MywiZXhwIjoxNjcxMjcyNTYzLCJuYmYiOjE2NzEyNjg5NjMsImp0aSI6InhoekNJMHhPVUF2VFZ5VjAiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Vw4w109Xjyqf03KdLlcF-iQElAzV-q019Eaqw6nZl8E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "laravel9restapiauth.test/api/show",
+					"host": [
+						"laravel9restapiauth",
+						"test"
+					],
+					"path": [
+						"api",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGFyYXZlbDlyZXN0YXBpYXV0aC50ZXN0L2FwaS9sb2dpbiIsImlhdCI6MTY3MTI2ODk2MywiZXhwIjoxNjcxMjcyNTYzLCJuYmYiOjE2NzEyNjg5NjMsImp0aSI6InhoekNJMHhPVUF2VFZ5VjAiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Vw4w109Xjyqf03KdLlcF-iQElAzV-q019Eaqw6nZl8E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "laravel9restapiauth.test/api/update/1?name=Mehmet&email=mkiyak512@gmail.com&password=123456",
+					"host": [
+						"laravel9restapiauth",
+						"test"
+					],
+					"path": [
+						"api",
+						"update",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mehmet"
+						},
+						{
+							"key": "email",
+							"value": "mkiyak512@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

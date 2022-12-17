@@ -171,3 +171,8 @@ curl
     "message": "Oturum başarıyla kapatıldı"
 }
 ```
+
+## Postman 
+
+- Çalışmada test için postman üzerinde yapılan işlemlere aşağıda belirtilen koleksiyon içinden bakabilirsiniz. Koleksiyon repo içerisinde yer almaktadır.
+- laravel9RestApiAuth.postman_collection.json

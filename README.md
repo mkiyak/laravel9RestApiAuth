@@ -12,9 +12,10 @@ git clone https://github.com/kyakmehmet/laravel9RestApiAuth.git
 cd laravel9RestApiAuth
 ```
 
-- Composer Kurulumu
+- Composer Kurulumu & Key
 ```
 composer install
+php artisan key:generate
 ```
 
 

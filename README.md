@@ -80,6 +80,8 @@ curl
 ```
 - **Not:** Tarafınıza gönderilen e-posta ile üyeliğinizi onaylaymanız gerekmektedir.
 
+- Örnek; E-posta
+![img.png](img.png)
 
 ### 2 - Kullanıcı Girişi
 
@@ -171,7 +173,6 @@ curl
     "message": "Oturum başarıyla kapatıldı"
 }
 ```
-
 ## Postman 
 
 - Çalışmada test için postman üzerinde yapılan işlemlere aşağıda belirtilen koleksiyon içinden bakabilirsiniz. Koleksiyon repo içerisinde yer almaktadır.

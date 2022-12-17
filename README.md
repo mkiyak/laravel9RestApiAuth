@@ -43,6 +43,18 @@ php artisan jwt:secret
 php artisan migrate
 ```
 
+- Kayıt esnasında onay için mail gönderimi yapıldığından .env içerisindeki alana mail bilgilerinizi giriniz.
+
+```
+MAIL_MAILER=smtp
+MAIL_HOST=mailhog
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+```
 
 ## API İstekleri
 
